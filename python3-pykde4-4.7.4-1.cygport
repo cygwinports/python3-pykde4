@@ -1,0 +1,20 @@
+ORIG_PN="pykde4"
+inherit python3 kde4
+
+
+SRC_URI="mirror://kde/stable/${PV}/src/${ORIG_PN}-${PV}.tar.bz2"
+
+PATCH_URI="
+	4.2.0-python-dlfcn.patch
+	4.7.0-cygwin.patch
+"
+
+CYGCMAKE_ARGS="-DPYTHON_EXECUTABLE=${PYTHON3}"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	# conflicts with python-pykde4
+	rm -f ${D}/usr/bin/pykdeuic4
+	rm -fr ${D}/usr/share/kde4/apps/pykde4/examples/
+}

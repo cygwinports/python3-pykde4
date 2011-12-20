@@ -1,0 +1,16 @@
+Python on Cygwin does not currently provide DLFCN.
+
+--- origsrc/kdebindings-4.2.0/python/pykde4/__init__.py	2008-07-21 19:00:52.000000000 -0500
++++ src/kdebindings-4.2.0/python/pykde4/__init__.py	2009-01-28 12:29:09.234875000 -0600
+@@ -1,4 +1,7 @@
+-import sys,DLFCN
+ # This is needed to ensure that dynamic_cast and RTTI works inside kdelibs.
+-sys.setdlopenflags(DLFCN.RTLD_NOW|DLFCN.RTLD_GLOBAL)
+-     
+\ No newline at end of file
++try: 
++	import sys,DLFCN
++	sys.setdlopenflags(DLFCN.RTLD_NOW|DLFCN.RTLD_GLOBAL)
++except ImportError:
++	pass
++
