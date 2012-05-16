@@ -2,8 +2,6 @@ ORIG_PN="pykde4"
 inherit python3 kde4
 
 
-SRC_URI="mirror://kde/stable/${PV}/src/${ORIG_PN}-${PV}.tar.bz2"
-
 PATCH_URI="
 	4.2.0-python-dlfcn.patch
 	4.7.0-cygwin.patch
