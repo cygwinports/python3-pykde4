@@ -1,6 +1,9 @@
 ORIG_PN="pykde4"
 inherit python3 kde4
 
+CATEGORY="KDE Python"
+SUMMARY="Py3K KDE4 bindings"
+DESCRIPTION="A collection of language bindings for Qt and KDE"
 
 PATCH_URI="
 	4.2.0-python-dlfcn.patch

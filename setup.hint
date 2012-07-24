@@ -1,4 +1,0 @@
-category: KDE Python
-requires: libgcc1 libkdecore5 libkpim4 libphonon4 libplasma3 libQtCore4 libQtGui4 libQtNetwork4 libQtSvg4 libQtXml4 libsoprano4 libstdc++6 python3 python3-pyqt4 python3-sip
-sdesc: "Py3K KDE4 bindings"
-ldesc: "A collection of language bindings for Qt and KDE"
