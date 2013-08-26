@@ -2,7 +2,7 @@ ORIG_PN="pykde4"
 inherit python3 kde4
 
 NAME="python3-pykde4"
-VERSION=4.8.5
+VERSION=4.10.5
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K KDE4 bindings"
@@ -11,7 +11,7 @@ DESCRIPTION="A collection of language bindings for Qt and KDE"
 PATCH_URI="
 	4.2.0-python-dlfcn.patch
 	4.7.0-cygwin.patch
-	4.8.5-pyqt495.patch
+	4.10.5-sipdir.patch
 "
 
 CYGCMAKE_ARGS="-DPYTHON_EXECUTABLE=${PYTHON3}"
