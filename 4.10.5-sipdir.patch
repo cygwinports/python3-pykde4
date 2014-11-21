@@ -4,8 +4,8 @@
  
  get_filename_component(LIB_DIR ${KDE4_LIB_DIR} NAME)
  
--set (SIP_FILES_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/sip)
-+set (SIP_FILES_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/python3-sip)
+-set(SIP_FILES_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/sip)
++set(SIP_FILES_INSTALL_DIR ${SHARE_INSTALL_PREFIX}/python3-sip)
  
  set(SIP_CONFIGURATION "
  kde_version_parts = '${KDE_VERSION}'.split('.')
