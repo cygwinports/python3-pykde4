@@ -3,7 +3,7 @@ inherit python3 kde4
 
 NAME="python3-pykde4"
 VERSION=4.14.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Py3K KDE4 bindings"
 DESCRIPTION="A collection of language bindings for Qt and KDE"
