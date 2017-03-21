@@ -3,12 +3,13 @@ inherit python3 kde4
 
 NAME="python3-pykde4"
 VERSION=4.14.3
-RELEASE=2
+RELEASE=3
 CATEGORY="Python"
 SUMMARY="Py3K KDE4 bindings"
 DESCRIPTION="A collection of language bindings for Qt and KDE"
 
 PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/rpms/pykde4.git/plain/0002-Add-some-missing-link-libraries.patch
 	4.2.0-python-dlfcn.patch
 	4.7.0-cygwin.patch
 	4.10.5-sipdir.patch
